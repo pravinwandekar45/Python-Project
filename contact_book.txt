@@ -1,0 +1,118 @@
+What is this Contact Book Project?
+Imagine you have a notebook (contact book) where you write down people’s:
+Name
+Phone number
+Email address
+
+
+You want to:
+
+Add new contacts
+See all the contacts
+Search for someone by name
+Delete someone’s contact
+
+
+Now instead of doing this on paper, we’ll build it using Python and OOP (Object-Oriented Programming).
+
+
+---
+
+🧱 Project is divided into two parts:
+
+🔹 1. Contact (One person)
+
+This is one contact — just like one page in your notebook.
+We made a class called Contact to represent this.
+
+class Contact:
+    def _init_(self, name, phone, email):
+        self.name = name
+        self.phone = phone
+        self.email = email
+
+Each Contact object will hold one person’s info.
+
+
+---
+
+🔹 2. ContactBook (Your full notebook)
+
+This is your full contact book — a list of all people.
+
+We use a class called ContactBook to manage it.
+
+It can:
+
+Add a contact → adds a new page to the notebook
+
+View all contacts → flips through all pages
+
+Search a contact → finds a page by name
+
+Delete a contact → removes the page
+
+
+self.contacts = []  # Think of this as the notebook (a list of Contact objects)
+
+We add Contact objects to this list.
+
+
+---
+
+🧪 How It Works (Flow):
+
+1. You run the program → it shows you a menu:
+
+
+
+1. Add Contact
+2. View Contacts
+3. Search Contact
+4. Delete Contact
+5. Exit
+
+2. You choose an option:
+
+Add → it asks you for name, phone, email and saves it.
+
+View → it shows all saved contacts.
+
+Search → you enter a name, and it finds if someone exists.
+
+Delete → you give a name, and it removes that contact.
+
+Exit → stops the program.
+
+
+
+
+
+---
+
+💡 Real-Life Example:
+
+Let’s say:
+
+You add: Raj – 9876543210 – raj@gmail.com
+
+Then add: Neha – 9011223344 – neha@gmail.com
+
+
+Now your contact book has 2 pages.
+
+If you search for "Raj", it finds and shows Raj’s details.
+If you delete "Neha", she’s removed from the list.
+
+
+---
+
+🧠 What You Learn:
+
+Skill	How you used it
+
+Class & Object	Contact and ContactBook
+Constructor (_init_)	To set name, phone, email
+Lists of objects	To store all contacts
+Menu-driven program	while True + user input
+OOP in real-world project	Managing data cleanly and modularly
